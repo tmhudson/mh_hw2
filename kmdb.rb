@@ -174,6 +174,96 @@ hardy = Actor.find_by({"actor_name" => "Tom Hardy"})
 jgl = Actor.find_by({"actor_name" => "Joseph Gordon-Levitt"})
 mia_thermopolis = Actor.find_by({"actor_name" => "Anne Hathaway"})
 
+new_role = Role.new
+new_role["movie_id"] = batty_beg["id"]
+new_role["actor_id"] = bale["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = batty_beg["id"]
+new_role["actor_id"] = caine["id"]
+new_role["character_name"] = "Alfred"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = batty_beg["id"]
+new_role["actor_id"] = neeson["id"]
+new_role["character_name"] = "Ra's Al Ghul"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = batty_beg["id"]
+new_role["actor_id"] = holmes["id"]
+new_role["character_name"] = "Rachel Dawes"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = batty_beg["id"]
+new_role["actor_id"] = oldman["id"]
+new_role["character_name"] = "Commissioner Gordon"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = some_men_want_to_watch_the_world_burn["id"]
+new_role["actor_id"] = bale["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = some_men_want_to_watch_the_world_burn["id"]
+new_role["actor_id"] = ledger["id"]
+new_role["character_name"] = "Joker"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = some_men_want_to_watch_the_world_burn["id"]
+new_role["actor_id"] = eckhart["id"]
+new_role["character_name"] = "Harvey Dent"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = some_men_want_to_watch_the_world_burn["id"]
+new_role["actor_id"] = caine["id"]
+new_role["character_name"] = "Alfred"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = some_men_want_to_watch_the_world_burn["id"]
+new_role["actor_id"] = gyl["id"]
+new_role["character_name"] = "Rachel Dawes"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = i_was_born_in_the_dark["id"]
+new_role["actor_id"] = bale["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = i_was_born_in_the_dark["id"]
+new_role["actor_id"] = oldman["id"]
+new_role["character_name"] = "Commissioner Gordon"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = i_was_born_in_the_dark["id"]
+new_role["actor_id"] = hardy["id"]
+new_role["character_name"] = "Bane"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = i_was_born_in_the_dark["id"]
+new_role["actor_id"] = jgl["id"]
+new_role["character_name"] = "John Blake"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = i_was_born_in_the_dark["id"]
+new_role["actor_id"] = mia_thermopolis["id"]
+new_role["character_name"] = "Selina Kyle"
+new_role.save
+
 
 # Prints a header for the movies output
 puts "Movies"
@@ -182,6 +272,10 @@ puts ""
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
+for XXX
+    
+end
+
 
 # Prints a header for the cast output
 puts ""
