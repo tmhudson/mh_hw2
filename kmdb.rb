@@ -272,9 +272,22 @@ puts ""
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
-for XXX
-    
-end
+# movies_group = Movie.where({"studio_id" => warner["id"]})
+
+# for movie in movies_group
+#   studio = Studio.find_by({"id" => movie["studio_id"]})
+
+#   movie_title = movie["title"]
+#   movie_year = movie["year_released"]
+#   movie_rating = movie["mpaa_rating"]
+  
+# #   read the name column from the studio row
+#   movie_studio = studio["studio_name"]
+# #  MH to come back to confirming studio name
+
+#   # display a string with the contact's full name and note
+#   puts "#{movie_title} #{movie_year} #{movie_rating} #{movie_studio}"
+# end
 
 
 # Prints a header for the cast output
