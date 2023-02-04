@@ -84,7 +84,7 @@ Actor.destroy_all
 
 # inserting studio table information
 new_studio = Studio.new
-new_studio["studio_id"] = "Warner Bros."
+new_studio["studio_name"] = "Warner Bros."
 new_studio.save
 
 # inserting movie table information
@@ -272,22 +272,22 @@ puts ""
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
-# movies_group = Movie.where({"studio_id" => warner["id"]})
+movies_group = Movie.all
 
-# for movie in movies_group
-#   studio = Studio.find_by({"id" => movie["studio_id"]})
+for movie in movies_group
+  studio = Studio.find_by({"id" => movie["studio_id"]})
 
-#   movie_title = movie["title"]
-#   movie_year = movie["year_released"]
-#   movie_rating = movie["mpaa_rating"]
+  movie_title = movie["title"]
+  movie_year = movie["year_released"]
+  movie_rating = movie["mpaa_rating"]
   
-# #   read the name column from the studio row
-#   movie_studio = studio["studio_name"]
-# #  MH to come back to confirming studio name
+#   read the name column from the studio row
+  movie_studio = studio["studio_name"]
+#  MH to come back to confirming studio name
 
-#   # display a string with the contact's full name and note
-#   puts "#{movie_title} #{movie_year} #{movie_rating} #{movie_studio}"
-# end
+  # display a string with the contact's full name and note
+  puts "#{movie_title} #{movie_year} #{movie_rating} #{movie_studio}"
+end
 
 
 # Prints a header for the cast output
