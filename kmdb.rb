@@ -283,7 +283,6 @@ for movie in movies_group
   
 #   read the name column from the studio row
   movie_studio = studio["studio_name"]
-#  MH to come back to confirming studio name
 
   # display a string with the contact's full name and note
   puts "#{movie_title} #{movie_year} #{movie_rating} #{movie_studio}"
@@ -298,3 +297,17 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+roles_group = Role.all
+
+for role in roles_group
+  # studio = Studio.find_by({"id" => movie["studio_id"]})
+  # kinda forget what I'm doing with this guy
+  movie_title = movie["title"]
+  lead_actor_name = actor["actor_name"]
+  # error is in row 306...I might need to reference the actor_id in order to get to the name
+  actors_character = role["character_name"]
+  
+
+  # display a string with the title, actor and character
+  puts "#{movie_title} #{lead_actor_name} #{actors_character}"
+end
