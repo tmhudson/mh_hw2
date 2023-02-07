@@ -276,16 +276,7 @@ movies_group = Movie.all
 
 for movie in movies_group
   studio = Studio.find_by({"id" => movie["studio_id"]})
-
-  movie_title = movie["title"]
-  movie_year = movie["year_released"]
-  movie_rating = movie["mpaa_rating"]
-  
-#   read the name column from the studio row
-  movie_studio = studio["studio_name"]
-
-  # display a string with the contact's full name and note
-  puts "#{movie_title} #{movie_year} #{movie_rating} #{movie_studio}"
+  puts "#{movie["title"]}  #{movie["year_released"]}  #{movie["mpaa_rating"]}  #{studio["studio_name"]} "
 end
 
 
