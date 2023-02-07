@@ -276,6 +276,7 @@ movies_group = Movie.all
 
 for movie in movies_group
   studio = Studio.find_by({"id" => movie["studio_id"]})
+  # display string to output the movies table
   puts "#{movie["title"]}  #{movie["year_released"]}  #{movie["mpaa_rating"]}  #{studio["studio_name"]} "
 end
 
